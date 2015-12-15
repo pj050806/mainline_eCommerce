@@ -3,14 +3,14 @@ package com.packtpub.wicket.commerce;
 import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;
+import com.packtpub.wicket.commerce.CheesrPage;
 
 /**
  * Simple test using the WicketTester
  */
 public class TestHomePage
 {
-	private WicketTester tester;
-
+	private WicketTester tester;	
 	@Before
 	public void setUp()
 	{
@@ -21,9 +21,9 @@ public class TestHomePage
 	public void homepageRendersSuccessfully()
 	{
 		//start and render the test page
-		tester.startPage(CheesrPage.class);
+		tester.startPage(Index.class);		 
 
 		//assert rendered page class
-		tester.assertRenderedPage(CheesrPage.class);
+		tester.assertRenderedPage(Index.class);	
 	}
 }
